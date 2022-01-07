@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기업의 요청에 Yes로 대답하는, 예스테크</title>
+    <!-- 파비콘 스타일 시트 -->
+    <link rel="shortcut icon" href="images/fa_mys_icon.ico">
+    <!-- main 스타일 시트 -->
+    <link rel="stylesheet" href="css/sub_style.css">
+    <!-- nav 스타일 시트 -->
+    <link rel="stylesheet" href="css/nav_style.css">
+
+    <style>
+      /*PC부분 */
+      @media screen and (min-width:1200px) {
+        #map_flex {
+        width:1200px;
+        display: flex;
+        justify-content: space-between;
+      }
+        #map_img {
+        width:60%;
+      }
+      #map_tel {
+        padding-top: 130px;
+        width:34%;
+        line-height: 50px;
+      }
+      #map_tel p:first-child {
+        font-size: 1.9em;
+      }
+      #map_tel p:nth-child(2), #map_tel p:nth-child(3) {
+        font-size: 1.8em;
+      }
+      }
+      /* 테블릿PC부분 */
+      @media screen and (min-width:769px) and (max-width:1199px) {
+        #map_flex {
+        width:90%;
+        display: flex;
+        justify-content: space-between;
+      }
+      #map_img {
+        width:60%;
+      }
+      #map_tel {
+        padding-top: 80px;
+        width:34%;
+        line-height: 50px;
+      }
+      #map_tel p:first-child {
+        font-size: 1.9em;
+      }
+      #map_tel p:nth-child(2), #map_tel p:nth-child(3) {
+        font-size: 1.8em;
+      }
+      }
+      /*모바일부분 */
+      @media screen and (max-width:768px) {
+        #map_flex {
+        width:95%;
+      }
+      #map_tel {
+        padding-top: 50px;
+        line-height: 40px;
+      }
+      #map_tel p:first-child {
+        font-size: 1.6em;
+      }
+      #map_tel p:nth-child(2), #map_tel p:nth-child(3) {
+        font-size: 1.5em;
+      }
+      }
+      #map_flex {
+        margin: 0 auto;
+        margin-bottom:150px;
+      }
+      #map_img {
+        border-radius: 30px;
+        border:1px solid #efefef;
+        box-shadow: 1px 1px 3px #efefef;
+      }
+      #map_img img {
+        width:100%;
+        height:auto;
+        border-radius: 30px;
+      }
+      #map_tel p:first-child {
+        color:rgb(15,45,146);
+        font-weight: bold;
+      }
+      #map_tel p:nth-child(2), #map_tel p:nth-child(3) {
+        color:#666666;
+      }
+
+    </style>
+
+</head>
+<body>
+    <nav class="nav" id="menu">
+        <div class="wrap">
+          <div class="brand">
+            <span id="logo">
+              <a href="index.html">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;
+               <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;
+               <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;
+              </a>
+            </span>
+          </div>
+          <ul class="top-menu" id="top-menu">
+            <li class="m_li">
+              <a href="sub01_1.html">회사소개</a>
+              <ul class="sub_menu">
+                <li><a href="sub01_1.html">인사말</a></li>
+                <li><a href="sub01_2.html">오시는 길</a></li>
+              </ul>
+            </li>
+            <li class="m_li">
+              <a href="sub02_1.html">설치시공사례</a>
+              <ul class="sub_menu" id="sub02">
+                <li><a href="sub02_1.html">덕트시공사례</a></li>
+                <li><a href="sub02_2.html">산업용필터 교체사례</a></li>
+                <li><a href="sub02_3.html">집진기 설치사례</a></li>
+              </ul>
+            </li>
+            <li class="m_li">
+              <a href="sub03_1.html">제품소개</a>
+              <ul class="sub_menu" id="sub03">
+                <li><a href="sub03_1.html">집진기</a></li>
+                <li><a href="sub03_2.html">대기오염방지시설</a></li>
+                <li><a href="sub03_3.html">기타</a></li>
+              </ul>
+            </li>
+            <li class="m_li"><a href="sub04_1.html">제품문의</a></li>
+          </ul>
+          <div id="menu-container">
+            <div id="menu-wrapper">
+               <div id="hamburger-menu"><span></span><span></span><span></span></div>
+               <!-- hamburger-menu -->
+            </div>
+            <!-- menu-wrapper -->
+            <ul class="menu-list accordion">
+               <li id="nav1" class="toggle accordion-toggle"> 
+                  <span class="icon-plus"></span>
+                  <a class="menu-link" href="sub01_1.html">회사소개</a>
+               </li>
+               <!-- accordion-toggle -->
+               <ul class="menu-submenu accordion-content">
+                  <li><a class="head" href="sub01_1.html">인사말</a></li>
+                  <li><a class="head" href="sub01_2.html">오시는 길</a></li>
+               </ul>
+               <!-- menu-submenu accordon-content-->
+               <li id="nav2" class="toggle accordion-toggle"> 
+                  <span class="icon-plus"></span>
+                  <a class="menu-link" href="sub02_1.html">설치시공사례</a>
+               </li>
+               <!-- accordion-toggle -->
+               <ul class="menu-submenu accordion-content">
+                  <li><a class="head" href="sub02_1.html">덕트시공사례</a></li>
+                  <li><a class="head" href="sub02_2.html">산업용필터 교체사례</a></li>
+                  <li><a class="head" href="sub02_3.html">집진기 설치사례</a></li>
+               </ul>
+               <!-- menu-submenu accordon-content-->
+                <li id="nav3" class="toggle accordion-toggle"> 
+                  <span class="icon-plus"></span>
+                  <a class="menu-link" href="sub03_1.html">제품소개</a>
+               </li>
+               <!-- accordion-toggle -->
+               <ul class="menu-submenu accordion-content">
+                  <li><a class="head" href="sub03_1.html">집진기</a></li>
+                  <li><a class="head" href="sub03_2.html">대기오염방지시설</a></li>
+                  <li><a class="head" href="sub03_3.html">기타</a></li>
+               </ul>
+               <!-- menu-submenu accordon-content-->
+               <li id="nav4" class="toggle accordion-toggle"> 
+                <span class="icon-plus"></span>
+                <a class="menu-link" href="sub04_1.html">제품문의</a>
+             </li>
+            </ul>
+            <!-- menu-list accordion-->
+          </div>
+        </div>
+    </nav>
+    <section id="main01">
+        <h1>회사소개</h1>
+        <div id="link">
+            <a href="index.html">HOME</a>
+            <p>&nbsp;&nbsp;>&nbsp;&nbsp;</p>
+            <a href="sub01_1.html">회사소개</a>
+            <p>&nbsp;&nbsp;>&nbsp;&nbsp;</p>
+            <a href="sub01_2.html">찾아오시는길</a>
+        </div>
+        <div id="tab_wrapper">
+            <div id="tab">
+                <a href="sub01_1.html"><li>인사말</li></a>
+                <a href="sub01_2.html" id="first"><li>찾아오시는길</li></a>
+            </div>
+        </div>
+    </section>
+    <section id="content">
+        <div class="c_title">
+            <div class="line"></div>
+            <p id="t01">찾아오시는길</p>
+        </div>
+        <div id="map_flex">
+          <div id="map_img">
+            <img src="images/map.jpg">
+          </div>
+          <div id="map_tel">
+            <p>대구광역시 달서구 와룡로 10</p>
+            <p><b>TEL: </b>053-588-1238</p>
+            <p><b>FAX: </b>053-584-1237</p>
+          </div>
+        </div>
+    </section>
+    <footer>
+      <div id="footer_wrapper">
+        <div id="f_logo">
+          <img src="images/f_logo.png" width="200px" height="auto">
+        </div>
+        <div id="f_text">
+          <p>대구광역시 달서구 와룡료 10 (본동 1113-1)</p>
+          <p>TEL: 053-588-1238 ｜ FAX: 053-584-1237</p>
+          <p>Email : yesjm1236@naver.com</p>
+        </div>
+      </div>
+    </footer>
+    <nav id="top_btn">
+      <a href="#">TOP</a>
+    </nav>
+<script src="js/jquery-2.2.4.min.js"></script>
+<!-- nav script -->
+<script src="./js/nav.js"></script>
+<!-- toggle script -->
+<script src="./js/toggle.js"></script>
+<!-- scroll js-->
+<script src="js/jquery.scrollTo.min.js"></script>
+</body>
+</html>
